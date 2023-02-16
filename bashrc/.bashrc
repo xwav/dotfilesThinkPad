@@ -77,6 +77,7 @@ fi
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
+alias lz='lazygit'
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
@@ -204,3 +205,4 @@ setxkbmap us,ua -option grp:ctrl_alt_toggle
 # dotfiles push origin master
 
 set -o vi
+export PATH=/home/xwav/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/xwav/.local/bin:/home/xwav/.local/bin:/home/xwav/.config/fzf/bin:/home/xwav/.local/bin:/usr/local/go/bin

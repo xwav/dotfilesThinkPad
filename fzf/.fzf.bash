@@ -6,7 +6,7 @@ fi
 
 # Auto-completion
 # ---------------
-[[ $- == *i* ]] && source "/home/xwav/.config/fzf/shell/completion.bash" 2> /dev/null
+# [[ $- == *i* ]] && source "/home/xwav/.config/fzf/shell/completion.bash" 2> /dev/null
 
 # Key bindings
 # ------------

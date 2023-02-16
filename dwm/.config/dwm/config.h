@@ -24,8 +24,8 @@ typedef struct {
 	const char *name;
 	const void *cmd;
 } Sp;
-const char *spcmd1[] = {"st", "-n", "spterm", "-g", "120x34", NULL };
-const char *spcmd2[] = {"st", "-n", "spfm", "-g", "144x41", "-e", "ranger", NULL };
+const char *spcmd1[] = {"st", "-n", "spterm", "-g", "135x38", NULL };
+const char *spcmd2[] = {"st", "-n", "spnews", "-g", "144x41", "-e", "newsboat", NULL };
 const char *spcmd3[] = {"zathura", NULL };
 const char *spcmd4[] = {"st", "-n", "spmc", "-g", "144x41", "-e", "mc", NULL };
 const char *spcmd5[] = {"st", "-n", "spcmus", "-g", "144x41", "-e", "cmus", NULL };
@@ -33,7 +33,7 @@ const char *spcmd6[] = {"brave-browser", NULL };
 static Sp scratchpads[] = {
 	/* name          cmd  */
 	{"spterm",      spcmd1},
-	{"spranger",    spcmd2},
+	{"spnews",      spcmd2},
 	{"zathura",     spcmd3},
 	{"spmc",        spcmd4},
 	{"spcmus",      spcmd5},
@@ -50,7 +50,7 @@ static const Rule rules[] = {
 	/* class             instance    title       tags mask     isfloating   monitor */
 	{ "Brave-browser",   NULL,	      NULL,       1 << 2,		        	0,			 -1 },
 	{ NULL,             "spterm",		  NULL,       SPTAG(0),           1,			 -1 },
-	{ NULL,             "spfm",	    	NULL,       SPTAG(1),           1,			 -1 },
+	{ NULL,             "splf",	    	NULL,       SPTAG(1),           1,			 -1 },
 	// { NULL,             "zathura",	  NULL,       SPTAG(2),           1,			 -1 },
 	{ NULL,             "spmc",	      NULL,       SPTAG(3),           1,			 -1 },
 	{ NULL,             "spcmus",	    NULL,       SPTAG(4),           1,			 -1 },
@@ -156,7 +156,7 @@ static const Key keys[] = {
 
   // Scratchpads
   { MODKEY,                       XK_grave,  togglescratch,  {.ui = 0 } },
-	{ MODKEY,                       XK_r,      togglescratch,  {.ui = 1 } },
+	{ MODKEY,                       XK_n,      togglescratch,  {.ui = 1 } },
 	{ MODKEY,                       XK_z,      togglescratch,  {.ui = 2 } },
 	{ MODKEY,                       XK_m,      togglescratch,  {.ui = 3 } },
 	{ MODKEY,                       XK_c,      togglescratch,  {.ui = 4 } },
