@@ -1,0 +1,4 @@
+#!/bin/bash
+/usr/bin/rclone sync "drive:/BOOKZ" "/home/xwav/DiskD/Sync/BOOKZ"
+
+/usr/bin/rclone copy --update "drive:pswrd.kdbx" "/home/xwav/DiskD/Sync"

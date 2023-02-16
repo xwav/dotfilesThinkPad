@@ -1,0 +1,9 @@
+pane	0	1	0	:	1	thinkpad	:/home/xwav	1	nvim	:nvim
+pane	0	2	0	:-	1	thinkpad	:/home/xwav/.newsboat	1	nvim	:nvim urls
+pane	0	3	1	:*	1	thinkpad	:/home/xwav	1	newsboat	:newsboat
+pane	second	1	1	:*	1	thinkpad	:/home/xwav	1	bash	:
+window	0	1	:nvim	0	:	abbd,150x40,0,0,0	:
+window	0	2	:nvim	0	:-	b27e,123x32,0,0,1	:
+window	0	3	:newsboat	1	:*	b27f,123x32,0,0,2	:
+window	second	1	:bash	1	:*	b280,123x32,0,0,3	:
+state	0	second
