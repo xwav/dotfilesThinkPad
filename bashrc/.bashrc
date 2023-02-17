@@ -206,3 +206,5 @@ setxkbmap us,ua -option grp:ctrl_alt_toggle
 
 set -o vi
 export PATH=/home/xwav/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/xwav/.local/bin:/home/xwav/.local/bin:/home/xwav/.config/fzf/bin:/home/xwav/.local/bin:/usr/local/go/bin
+
+
