@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+#LINK THIS FILE TO /usr/local/bin/ TO MAKE CTRL+p WORK FOR passmenu
+
+
 shopt -s nullglob globstar
 
 typeit=0

@@ -83,6 +83,7 @@ static const Layout layouts[] = {
 /* commands */
 static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "tabbed", "-r", "2", "st", "-w", "''", NULL };
+static const char *passmenu[]  = { "passmenu", NULL };
 
 /* make a screenshot*/
 static const char *screenshot[]  = { "scrot", "-s", "/home/xwav/screenshots/%Y-%m-%d-%s_$wx$h.jpg", NULL };
@@ -120,10 +121,11 @@ static const Key keys[] = {
 
 	{ MODKEY|ControlMask,           XK_Up,     pushdown,               {0} },
 	{ MODKEY|ControlMask,           XK_Down,   pushup,                 {0} },
-	{ MODKEY,                       XK_p,      spawn,          SHCMD("passmenu") },
+	// { MODKEY,                       XK_p,      spawn,          SHCMD("passmenu") },
   { MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_s,      spawn,          {.v = screenshot } },
+	{ MODKEY,                       XK_p,      spawn,          {.v = passmenu } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_Down,   focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_Up,     focusstack,     {.i = -1 } },

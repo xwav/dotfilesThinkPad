@@ -8,6 +8,13 @@ case $- in
       *) return;;
 esac
 
+#auto-startX to tty1
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec startx; fi
+
+set -o vi
+
+export PATH=/home/xwav/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/xwav/.local/bin:/home/xwav/.local/bin:/home/xwav/.config/fzf/bin:/home/xwav/.local/bin:/usr/local/go/bin
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -153,16 +160,12 @@ fi
 
 
 # set up the pager for syntax hyghlight in terminal
-export PATH=$PATH:/home/xwav/.local/bin
+# export PATH=$PATH:/home/xwav/.local/bin
 # export PAGER="most"
 export BROWSER="brave-browser"
 export XTERM="st"
 export EDITOR="nvim"
-# export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
 
-
-#auto-startX to tty1
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec startx; fi
 
 #add keyboard layout to dwm
 setxkbmap us,ua -option grp:ctrl_alt_toggle
@@ -204,7 +207,5 @@ setxkbmap us,ua -option grp:ctrl_alt_toggle
 # dotfiles remote add origin https://www.github.com/username/repo.git
 # dotfiles push origin master
 
-set -o vi
-export PATH=/home/xwav/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/xwav/.local/bin:/home/xwav/.local/bin:/home/xwav/.config/fzf/bin:/home/xwav/.local/bin:/usr/local/go/bin
 
 
