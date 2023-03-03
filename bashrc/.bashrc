@@ -11,7 +11,7 @@ esac
 #auto-startX to tty1
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec startx; fi
 
-set -o vi
+# set -o vi
 
 export PATH=/home/xwav/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/xwav/.local/bin:/home/xwav/.local/bin:/home/xwav/.config/fzf/bin:/home/xwav/.local/bin:/usr/local/go/bin
 
@@ -104,6 +104,7 @@ alias v="nvim"
 alias h="cht.sh --shell"
 alias j="jmtpfs ~/Poco"
 alias z="nvim /home/$USER/.bashrc"
+alias pm="passmenu &"
 
 alias ..="cd .."
 alias ...="cd ../.."
