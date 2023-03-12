@@ -340,7 +340,7 @@ function M.setup(config)
     PmenuThumb = { bg = c.foreground },
     EasyMotionShade = { fg = c.NONE },
     -- Visual = { bg = c.medium_gray },
-    Visual = { bg = c.background_light },
+    Visual = { bg = c.orange },
     MultiCursor = { bg = c.background_light },
     Cursor = { bg = c.medium_gray, fg = c.NONE },
 
