@@ -159,10 +159,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
-# set up the pager for syntax hyghlight in terminal
-# export PATH=$PATH:/home/xwav/.local/bin
-# export PAGER="most"
+export PAGER="most"
 export BROWSER="brave-browser"
 export XTERM="st"
 export EDITOR="nvim"
