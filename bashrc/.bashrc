@@ -129,6 +129,7 @@ alias f="fzf --preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree 
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
 #Git aliases
+alias gst='git status'
 alias ga='git add'
 alias gaa='git add --all'
 alias gc='git commit'

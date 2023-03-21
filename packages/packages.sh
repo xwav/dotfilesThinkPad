@@ -39,7 +39,8 @@ mpv \
 transmission-cli \
 transmission-daemon \
 pass \
-stow
+stow \
+tldr
 
 # tmux \
 # fzf \
