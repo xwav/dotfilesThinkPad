@@ -40,7 +40,8 @@ transmission-cli \
 transmission-daemon \
 pass \
 stow \
-tldr
+tldr \
+moreutils
 
 # tmux \
 # fzf \
